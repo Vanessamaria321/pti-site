@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style type="text/css">
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightpink;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about {
+            flex: 1;
+            max-width: 200px; /* Reduzi a largura para ajustar ao canto direito */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+        }
+
+        .signup-form {
+            flex: 1;
+            max-width: 400px; /* Reduzi a largura para ajustar ao canto esquerdo */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 600px; /* Aumentei a largura para centralizar a imagem */
+            margin: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#conta">Conta</a>
+            <a href="#ja-tem-conta">Já tem uma conta</a>
+        </nav>
+        <h1>Bem-vindo à Academia de Balé</h1>
+        <p>Descubra a beleza da dança clássica conosco.</p>
+    </header>
+    
+    <div class="container">
+        <section class="signup-form">
+            <h2>Inscreva-se Agora</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="experience">Experiência em Balé:</label>
+                <select id="experience" name="experience">
+                    <option value="beginner">Iniciante</option>
+                    <option value="intermediate">Intermediário</option>
+                    <option value="advanced">Avançado</option>
+                </select>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+
+        <section class="image-container">
+            <img src='https://img.freepik.com/vetores-premium/acessorios-de-bale-par-de-sapatilhas-de-ponta-rosa-com-fita-de-cetim-ou-seda-objeto-de-estilo-de-desenho-vetorial-mao-desenhada_87946-2377.jpg' alt="Imagem de balé">
+        </section>
+
+        <section class="about">
+            <h2>Sobre Nós</h2>
+            <p>Nossa academia oferece aulas de balé para todas as idades e níveis. Seja você um iniciante ou um dançarino experiente, temos o ambiente perfeito para você se expressar através da dança.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vanessa Maria</p>
+    </footer>
+</body>
+</html>
